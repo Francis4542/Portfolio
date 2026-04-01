@@ -1,0 +1,27 @@
+<section class="section page-hero">
+  <div class="container">
+    <div class="sec-label">My Stack</div>
+    <h1 class="page-title">Skills</h1>
+    <p class="page-sub">AI/ML, backend, frontend — technologies I build with every day.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="skills-grid">
+      {{#each skills}}
+      <div class="skill-card animate">
+        <div class="skill-cat-title"><span class="skill-icon">{{icon}}</span> {{category}}</div>
+        <div class="skill-list">
+          {{#each items}}
+          <div class="skill-row">
+            <span class="skill-name">{{name}}</span>
+            <div class="skill-bar"><div class="skill-fill" style="width:{{level}}%"></div></div>
+            <span class="skill-pct">{{level}}%</span>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</section>
